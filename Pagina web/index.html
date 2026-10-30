@@ -1,0 +1,606 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cocina Económica Doña Chela | Sabor Casero Tradicional</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marfil: '#FAF6EE',
+            terracota: '#A8422B',
+            'terracota-dark': '#8e3621',
+            agave: '#1C2421',
+            ambar: '#DDA13E',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #FAF6EE;
+      color: #1C2421;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body class="bg-marfil text-agave antialiased selection:bg-terracota selection:text-white">
+<!-- 1. HEADER FIJO -->
+<header class="sticky top-0 z-50 bg-[#FAF6EE]/95 backdrop-blur-md border-b border-[#1C2421]/10 transition-all">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+<!-- Brand Logo -->
+<a class="flex flex-col group" href="#hero">
+<span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-terracota group-hover:text-terracota-dark transition-colors leading-none">
+          Doña Chela
+        </span>
+<span class="font-sans text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#1C2421]/70 uppercase mt-1">
+          Cocina Económica
+        </span>
+</a>
+<!-- Desktop Nav -->
+<nav class="hidden lg:flex items-center space-x-7 font-medium text-sm text-[#1C2421]/80">
+<a class="hover:text-terracota transition-colors" href="#hero">Inicio</a>
+<a class="hover:text-terracota transition-colors" href="#especialidades">Especialidades</a>
+<a class="hover:text-terracota transition-colors" href="#precios">Precios</a>
+<a class="hover:text-terracota transition-colors" href="#historia">Tradición</a>
+<a class="hover:text-terracota transition-colors" href="#ubicacion">Ubicación</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-3">
+<!-- Teléfono directo -->
+<a class="hidden md:flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-[#1C2421]/80 hover:text-terracota px-2.5 py-1.5 rounded-md hover:bg-stone-200/50 transition-colors" href="tel:+526971078171">
+<span class="material-symbols-outlined text-[18px] text-terracota">call</span>
+<span class="">+52 697 107 8171</span>
+</a>
+<!-- Botón Calificar en Google -->
+<a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-md border border-[#1C2421]/25 hover:border-terracota hover:text-terracota transition-all bg-white/60" href="https://www.google.com/maps/place/Cocina+Econ%C3%B3mica+%22Do%C3%B1a+Chela%22/@25.3789074,-108.1314403,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIDcndGPHA!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgrass-cs%2FAABkmLemlsbS9f209-GyEY7BW3xjg0b9N_OjoHM20s02IxUZ6Bc66U_RkTTLW4tZx37M5ctmrvlTMU5xBCQPazIY6RONXNbxbSMUw5re8yWfzA0r0I2377QIlYHTs2EdZ3OnYSA4l2Gc%3Dw114-h86-k-no!7i2576!8i1932!4m16!1m8!3m7!1s0x86bb86a5492c4d69:0xe2803251cc15cfd6!2zQ29jaW5hIEVjb27Ds21pY2EgIkRvw7FhIENoZWxhIg!8m2!3d25.3789074!4d-108.1314403!10e5!16s%2Fg%2F11byttvtpk!3m6!1s0x86bb86a5492c4d69:0xe2803251cc15cfd6!8m2!3d25.3789074!4d-108.1314403!10e5!16s%2Fg%2F11byttvtpk?entry=ttu" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-ambar" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+
+</a>
+<!-- Botón Pedir por WhatsApp -->
+
+</div>
+</div>
+</header>
+<main>
+<!-- 2. HERO SECTION A PANTALLA COMPLETA -->
+<section class="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden bg-agave" id="hero">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV8kHUJzIwTWduezuMseYe6H_90edpdVGOe_1BpwtqxOWVAQkJQbz7__m2GCcyGrNTHtuoyBXdPAiD9L-nhMSyXzhtN4ZpOStLRLMXOmG63Mn2NjeACZDbIyPQGxTQfX3maGJfrzblfXLHd3bL2vWmDr2KrhhHDs8a45HmyOi7KgQQlXLPhA0v_c6XY5ZCvoc5bP1Qv35cqbzHNW4oc5L4_yfucbB_n1dIfykCdDk8PEoirw8yNuVokg" alt="Fachada de Cocina Económica Doña Chela" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-agave via-agave/75 to-agave/60"></div></div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
+<!-- Badge Superior -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-marfil text-xs font-semibold uppercase tracking-wider mb-6">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="">Abierto hoy · Lun a Sáb 7:00 AM – 10:00 PM</span>
+</div>
+<!-- Titular Principal -->
+<h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-marfil tracking-tight leading-[1.15] mb-6">
+          Cocina Económica <br>
+<span class="italic font-serif font-bold text-ambar">Doña Chela</span>
+</h1>
+<!-- Subtítulo -->
+<p class="text-base sm:text-lg md:text-xl text-[#FAF6EE]/90 max-w-2xl font-light leading-relaxed mb-8">
+          El auténtico sazón casero preparado al momento cada mañana con recetas de tradición familiar, porciones generosas e ingredientes frescos de mercado.
+        </p>
+<!-- Botones de Acción -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-12">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-md bg-terracota hover:bg-terracota-dark text-white font-semibold text-sm transition-all shadow-lg hover:shadow-terracota/30 active:scale-[0.98]" href="#especialidades">
+
+
+</a>
+
+</div>
+<!-- 3 Datos Destacados -->
+<div class="grid grid-cols-3 divide-x divide-white/20 border-t border-white/15 pt-8 w-full max-w-xl text-center">
+<div class="px-2 sm:px-4">
+<span class="block font-serif text-xl sm:text-2xl font-bold text-ambar">4.9 ★</span>
+<span class="text-[11px] sm:text-xs uppercase tracking-wider text-marfil/80 font-medium mt-0.5 block">Sabor Casero</span>
+</div>
+<div class="px-2 sm:px-4">
+<span class="block font-serif text-xl sm:text-2xl font-bold text-ambar">$110</span>
+<span class="text-[11px] sm:text-xs uppercase tracking-wider text-marfil/80 font-medium mt-0.5 block">Precio Justo</span>
+</div>
+<div class="px-2 sm:px-4">
+<span class="block font-serif text-xl sm:text-2xl font-bold text-ambar">100%</span>
+<span class="text-[11px] sm:text-xs uppercase tracking-wider text-marfil/80 font-medium mt-0.5 block">Hecho en Casa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. FRANJA DE CONFIANZA EN CARBÓN AGAVE -->
+<section class="bg-agave text-marfil py-7 border-t border-stone-800 border-b border-stone-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid gap-6 text-center md:text-left grid-cols-1 md:grid-cols-3">
+<div class="flex items-center gap-3.5 justify-center md:justify-start">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-ambar">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<p class="text-xs sm:text-sm font-medium leading-snug">Guisados recién hechos cada mañana</p>
+</div>
+<div class="flex items-center gap-3.5 justify-center md:justify-start">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-ambar">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M3 21h18a2 2 0 002-2V9a2 2 0 00-2-2H3a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<p class="text-xs sm:text-sm font-medium leading-snug">Porciones abundantes y sazón auténtico&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+</div>
+
+<div class="flex items-center gap-3.5 justify-center md:justify-start">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-ambar">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<p class="text-xs sm:text-sm font-medium leading-snug">Aceptamos efectivo y transferencias</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. NUESTRA MESA DIARIA (ESPECIALIDADES 3x2) -->
+<section class="py-20 bg-marfil" id="especialidades">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header de Sección -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 pb-4 border-b border-agave/10">
+<div>
+<div class="inline-flex items-center gap-1.5 text-terracota font-bold text-xs uppercase tracking-widest mb-2">
+<span class="material-symbols-outlined text-[16px]">restaurant</span>
+<span class="">Nuestra Mesa Diaria</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-4xl text-agave font-bold tracking-tight">
+              Especialidades Caseras
+            </h2>
+</div>
+<div class="inline-flex items-center gap-2 bg-amber-100/70 border border-ambar/30 px-3.5 py-1.5 rounded-full text-agave text-xs sm:text-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-ambar"></span>
+<span class="">$110 MXN Precio Único</span>
+</div>
+</div>
+<!-- Cuadrícula simétrica 3x2 de exactamente 6 tarjetas -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- TARJETA 1: Torta Especial Casera -->
+<article class="bg-white rounded-lg overflow-hidden border border-agave/10 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-stone-200">
+<img alt="Torta Especial Casera en pan artesanal dorado con carne deshebrada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzgx2YTsIwqa_ysc7g0opaKVUXSESOiuwClDP3vG8E-JsXM_sLnj82D-PGlqDE7NLeEKigjv10l_820BGDK1x8I5WvnDGihutzhFjjySRqZUV3Af2htSlSLTZxJ-rE6RzgGmAloIHUbeG3ESde7pyqm5LXsAJuIyJ5Lp_XfrlGdFsfoINp0YbBWuZ1IXNnIuMABJF8wx7pDqv1JLbgJE8UkYTs7W6dA7HZOJKL1Ls8rXgQthhpFtuMdw">
+<span class="absolute top-3 left-3 bg-terracota text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wide">
+                Favorito de la casa
+              </span>
+<span class="absolute bottom-3 right-3 bg-agave/90 backdrop-blur-sm text-ambar font-serif text-lg font-bold px-2.5 py-0.5 rounded shadow">
+                $ 110
+              </span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-serif text-xl font-bold text-agave mb-2 group-hover:text-terracota transition-colors">
+                  Torta Especial Casera
+                </h3>
+<p class="text-xs sm:text-sm text-agave/75 leading-relaxed mb-4">
+                  Generosa porción de carne deshebrada sazonada, aguacate de temporada y aderezo especial en pan doradito a la mantequilla.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-stone-100">
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Pan artesanal</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Aguacate</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Carne sazonada</span>
+</div>
+</div>
+</article>
+<!-- TARJETA 2: Tacos Dorados con Ensalada -->
+<article class="bg-white rounded-lg overflow-hidden border border-agave/10 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-stone-200">
+<img alt="Tacos dorados crujientes servidos con ensalada de col, zanahoria y queso de rancho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0FHC-r9BjascDYmvdjYgy_jFY7wW6KeaLj0AJI4ZMRjF5X0sQhPh09qWVnBSvAKu_MkHuptgvWR6WaH0v0OhGJWO7Rrshkg6_O8RvxoewLasi3gYXcZNJmpL0ITuFl6m3G8DneNtdL9q8OzzoTs-YzLf9rgf-X1PUh1yqyU20OcOGUAfGNDe_zIWBz40VP_0Ba4lldZr2WsGckxkkkJxtAzYrMwq4pIn6gQzCyBHhA1E5t1ye9TKUyg">
+<span class="absolute top-3 left-3 bg-ambar text-agave text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wide">
+                Receta tradicional
+              </span>
+<span class="absolute bottom-3 right-3 bg-agave/90 backdrop-blur-sm text-ambar font-serif text-lg font-bold px-2.5 py-0.5 rounded shadow">
+                $ 110
+              </span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-serif text-xl font-bold text-agave mb-2 group-hover:text-terracota transition-colors">
+                  Tacos Dorados con Ensalada
+                </h3>
+<p class="text-xs sm:text-sm text-agave/75 leading-relaxed mb-4">
+                  Crujientes flautas al comal rellenas de guisado, coronadas con abundante ensalada de repollo, cebollita curtida y queso de rancho.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-stone-100">
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Tortilla al comal</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Queso de rancho</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Encurtidos</span>
+</div>
+</div>
+</article>
+<!-- TARJETA 3: Cazuela de Mariscos & Caldo -->
+<article class="bg-white rounded-lg overflow-hidden border border-agave/10 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-stone-200">
+<img alt="Cazuela caliente de camarón con verduras frescas en caldillo rojo aromático" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoPpKSel4MaBsgrcFZCD5q6XhMkYDkY751HO5zdTxXS3Xs2f41Fk6CpSrd0ew0IqGNva3HP6w-IHUm2mdzK1RIcPID3KR1z4_57u7tr_LJegSAz9TZQbpIKLUnNzxNM9owc_8D5VER4-M41HB7jvg2sHW5M2h3juXdTghsupyXks-uCoYpeK9tO_ZJFkvc4VbFnkisT-55U5pbXawP1V0nok1ZaEpgCigANb_T1nKYX_-XJa3syZ-5cA">
+<span class="absolute top-3 left-3 bg-agave text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wide">
+                Del mar a tu mesa
+              </span>
+<span class="absolute bottom-3 right-3 bg-agave/90 backdrop-blur-sm text-ambar font-serif text-lg font-bold px-2.5 py-0.5 rounded shadow">
+                $ 110
+              </span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-serif text-xl font-bold text-agave mb-2 group-hover:text-terracota transition-colors">
+                  Cazuela de Mariscos &amp; Caldo
+                </h3>
+<p class="text-xs sm:text-sm text-agave/75 leading-relaxed mb-4">
+                  Caldito humeante preparado con camarones tiernos seleccionados de costa, calabacita y especias tradicionales en barro.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-stone-100">
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Camarón fresco</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Verduras de huerto</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Sopa caliente</span>
+</div>
+</div>
+</article>
+<!-- TARJETA 4: Carne en Salsa con Guarnición -->
+<article class="bg-white rounded-lg overflow-hidden border border-agave/10 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-stone-200">
+<img alt="Guisado casero de carne en salsa roja con arroz rojo y frijoles de la olla" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhvgky4LQuESJte1_ltVd1IwNYEp1o44gfVrtcAy40CC8OeDw5uHKSrL5jyRZu4iEBUvQGYwqkdan7mKi5ycQCZsTcFJQYbJiS5he7C5_gwDSDkubfGrLKWBSTocxVjTuP4DcYtD9APTAuh9Y6u17set4usCUjrKAqL-9Bqh-pZzZGyqt3ksp1_YsGi89O_wsXlGtSWN_-Jaai2fE3GfYPH1DglM6KWWzfa0HHdt50uGNHeXGxn1GlvA">
+<span class="absolute top-3 left-3 bg-stone-700 text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wide">
+                Comida corrida
+              </span>
+<span class="absolute bottom-3 right-3 bg-agave/90 backdrop-blur-sm text-ambar font-serif text-lg font-bold px-2.5 py-0.5 rounded shadow">
+                $ 110
+              </span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-serif text-xl font-bold text-agave mb-2 group-hover:text-terracota transition-colors">
+                  Carne en Salsa con Guarnición
+                </h3>
+<p class="text-xs sm:text-sm text-agave/75 leading-relaxed mb-4">
+                  Bañada en salsa de jitomate y chiles secos de la casa, servida con arroz esponjado a la mexicana y frijolitos refritos.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-stone-100">
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Arroz mexicano</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Frijoles refritos</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Salsa casera</span>
+</div>
+</div>
+</article>
+<!-- TARJETA 5: Nachos Especiales Doña Chela -->
+<article class="bg-white rounded-lg overflow-hidden border border-agave/10 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-stone-200">
+<img alt="Platón abundante de totopos caseros cubiertos con abundante queso derretido, frijoles y carne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU1nqX0RoD1SM3LiA4uBIw4lHJF2aHc6bqu4MjbtV1WCZD_0t3BZa0MFZoJaX4Qy9yh0nYh8s18egGzexLgyREqFHp3LQO-_kF8eJG2MDbEYnYct3zI73NXQLftdVKoZ-iHyliELLoXW5IH2MoEqv0Hp8Enlm7RE5PZXQVWG8gS2R8DoHcw8aZiZmxTdLnBp_xM-wcALZH-wL4TGP_G1bPHOiVJIu1quv2cKAoDEhetxkvhyBFiS2kvA">
+<span class="absolute top-3 left-3 bg-terracota text-white text-[11px] font-bold px-2.5 py-1 rounded shadow-sm uppercase tracking-wide">
+                Para compartir
+              </span>
+<span class="absolute bottom-3 right-3 bg-agave/90 backdrop-blur-sm text-ambar font-serif text-lg font-bold px-2.5 py-0.5 rounded shadow">
+                $ 110
+              </span>
+</div>
+<div class="p-5 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-serif text-xl font-bold text-agave mb-2 group-hover:text-terracota transition-colors">
+                  Nachos Especiales Doña Chela
+                </h3>
+<p class="text-xs sm:text-sm text-agave/75 leading-relaxed mb-4">
+                  Totopos de maíz dorados en casa cubiertos con generosa carne sazonada, queso cheddar derretido y queso fresco espolvoreado.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2 border-t border-stone-100">
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Totopos caseros</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Queso fundido</span>
+<span class="bg-marfil border border-agave/10 text-agave/80 text-[11px] font-medium px-2 py-0.5 rounded">Porción XL</span>
+</div>
+</div>
+</article>
+<!-- TARJETA 6: Pollo en Crema con Rajas -->
+
+</div>
+</div>
+</section>
+<!-- 5. LISTA OFICIAL DE PRECIOS -->
+<section class="py-20 bg-[#F4EFE6] border-t border-b border-[#1C2421]/10" id="precios">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10">
+<span class="text-terracota font-bold text-xs uppercase tracking-widest block mb-2">Transparencia y Calidad</span>
+<h2 class="font-serif text-3xl sm:text-4xl text-agave font-bold">
+            Lista Oficial de Precios
+          </h2>
+<p class="text-xs sm:text-sm text-agave/70 mt-2 max-w-md mx-auto">
+            Porción completa servida al instante con el auténtico sazón de Doña Chela.
+          </p>
+</div>
+<!-- Tarjeta Menú Tradicional Editorial -->
+<div class="bg-white rounded-lg p-6 sm:p-10 shadow-sm border border-stone-200">
+<div class="flex items-center justify-between pb-6 mb-6 border-b border-stone-200 text-sm font-bold uppercase tracking-wider text-agave/60">
+<span class="">Platillo Principal del Día</span>
+<span class="">Precio</span>
+</div>
+<div class="space-y-5 text-sm sm:text-base">
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-semibold text-agave shrink-0">Tortas Caseras <span class="text-xs font-normal text-stone-500">(deshebrada o milanesa)</span></span>
+<span class="flex-grow border-b-2 border-dotted border-stone-300 mx-2"></span>
+<span class="font-serif font-bold text-ambar shrink-0 text-lg">$ 110</span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-semibold text-agave shrink-0">Nachos Especiales <span class="text-xs font-normal text-stone-500">con queso y carne</span></span>
+<span class="flex-grow border-b-2 border-dotted border-stone-300 mx-2"></span>
+<span class="font-serif font-bold text-ambar shrink-0 text-lg">$ 110</span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-semibold text-agave shrink-0">Sincronizadas <span class="text-xs font-normal text-stone-500">en tortilla grande</span></span>
+<span class="flex-grow border-b-2 border-dotted border-stone-300 mx-2"></span>
+<span class="font-serif font-bold text-ambar shrink-0 text-lg">$ 110</span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-semibold text-agave shrink-0">Cazuela tradicional <span class="text-xs font-normal text-stone-500">caliente</span></span>
+<span class="flex-grow border-b-2 border-dotted border-stone-300 mx-2"></span>
+<span class="font-serif font-bold text-ambar shrink-0 text-lg">$ 110</span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-semibold text-agave shrink-0">Albóndigas de Camarón <span class="text-xs font-normal text-stone-500">marinadas</span></span>
+<span class="flex-grow border-b-2 border-dotted border-stone-300 mx-2"></span>
+<span class="font-serif font-bold text-ambar shrink-0 text-lg">$ 110</span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-semibold text-agave shrink-0">Chiles Rellenos <span class="text-xs font-normal text-stone-500">capeados con picadillo o queso</span></span>
+<span class="flex-grow border-b-2 border-dotted border-stone-300 mx-2"></span>
+<span class="font-serif font-bold text-ambar shrink-0 text-lg">$ 110</span>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-semibold text-agave shrink-0">Pollo en Crema <span class="text-xs font-normal text-stone-500">con elotes y rajas</span></span>
+<span class="flex-grow border-b-2 border-dotted border-stone-300 mx-2"></span>
+<span class="font-serif font-bold text-ambar shrink-0 text-lg">$ 110</span>
+</div>
+</div>
+<!-- Nota al pie del menú -->
+<div class="mt-8 pt-6 border-t border-stone-200 text-center">
+
+
+</div>
+</div>
+</div>
+</section>
+<!-- 6. HISTORIA Y TRADICIÓN (CARBÓN AGAVE) -->
+<section class="py-20 bg-agave text-marfil" id="historia">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center md:grid-cols-3">
+<!-- Cita y Texto -->
+<div class="lg:col-span-6 space-y-6">
+<span class="text-ambar text-xs uppercase tracking-widest font-bold block">Herencia Culinaria</span>
+<blockquote class="font-serif text-2xl sm:text-3xl md:text-4xl italic text-marfil leading-snug">
+              “En Doña Chela cocinamos con la calma, el respeto y las recetas que heredamos”
+            </blockquote>
+<p class="text-marfil/80 text-sm sm:text-base leading-relaxed font-light">
+              Nuestra cocina nació para brindar comida honesta, caliente y sustanciosa a trabajadores, familias y visitantes. Con ingredientes locales y preparación artesanal en cada amanecer.
+            </p>
+<div class="pt-2 flex items-center gap-4 text-xs tracking-wider uppercase text-ambar">
+<span class="h-px w-10 bg-ambar/60"></span>
+<span class="">Tradición viva en Alhuey, Sinaloa</span>
+</div>
+</div>
+<!-- Imagen Tradición -->
+<div class="lg:col-span-6">
+<div class="relative rounded-lg overflow-hidden border border-white/10 shadow-2xl">
+<img alt="Manos expertas de cocinera tradicional haciendo tortillas a mano en comal de barro" class="w-full h-[380px] sm:h-[440px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhzWup1LwJ9PXSjBBwTYlcexHG777WqFzK7eoexEZoheyU2RJP7GBQYgR5CLHHZ2qET24Kbsw8aPAqFWdqplQrjkQ1NFBRVPO4CdGUYVtxu1UYeMsIRAN2O8aHTCsKODr8uyoGN5S2tr0TVtxCij5gsdH4tQsxJG6y2HOPG7qx1fuTejlSHE0Yja2i9VvCFMqQEqP7tmtARXnS0B89Y_nvPBu0JdPLa7-3w6MyHL7JmQHMHG5NRF10pB0ckJmmLpGELWaHxzK6HrIPfNM">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. RESEÑAS -->
+<section class="py-20 bg-marfil" id="resenas">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white rounded-xl border border-agave/10 p-8 sm:p-12 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Resumen de Calificación -->
+<div class="lg:col-span-5 text-center lg:text-left space-y-4">
+<span class="text-terracota font-bold text-xs uppercase tracking-widest">Lo Que Dicen Nuestros Comensales</span>
+<h2 class="font-serif text-3xl sm:text-4xl text-agave font-bold">
+                Sabor que se recomienda de boca en boca
+              </h2>
+<div class="flex items-center justify-center lg:justify-start gap-4 pt-2">
+<span class="font-serif text-5xl font-bold text-agave">4.9</span>
+<div>
+<div class="flex text-ambar">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="text-xs text-agave/70 block mt-0.5 font-medium">Más de 380 comensales satisfechos</span>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-terracota hover:bg-terracota-dark text-white font-semibold text-xs sm:text-sm transition-all shadow-sm" href="https://www.google.com/maps/place/Cocina+Econ%C3%B3mica+%22Do%C3%B1a+Chela%22/@25.3789074,-108.1314403,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIDcndGPHA!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgrass-cs%2FAABkmLemlsbS9f209-GyEY7BW3xjg0b9N_OjoHM20s02IxUZ6Bc66U_RkTTLW4tZx37M5ctmrvlTMU5xBCQPazIY6RONXNbxbSMUw5re8yWfzA0r0I2377QIlYHTs2EdZ3OnYSA4l2Gc%3Dw114-h86-k-no!7i2576!8i1932!4m16!1m8!3m7!1s0x86bb86a5492c4d69:0xe2803251cc15cfd6!2zQ29jaW5hIEVjb27Ds21pY2EgIkRvw7FhIENoZWxhIg!8m2!3d25.3789074!4d-108.1314403!10e5!16s%2Fg%2F11byttvtpk!3m6!1s0x86bb86a5492c4d69:0xe2803251cc15cfd6!8m2!3d25.3789074!4d-108.1314403!10e5!16s%2Fg%2F11byttvtpk?entry=ttu" rel="noopener noreferrer" target="_blank">
+
+
+</a>
+</div>
+</div>
+<!-- 3 Testimonios Destacados -->
+<div class="lg:col-span-7 space-y-4">
+<div class="bg-marfil p-4 sm:p-5 rounded-lg border border-agave/5">
+<div class="flex items-center justify-between mb-2">
+<div class="flex text-ambar">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="text-[11px] text-stone-500">Cliente verificado</span>
+</div>
+<p class="text-xs sm:text-sm text-agave/85 italic leading-relaxed">
+                  "La torta casera&nbsp; esuna delicia total. Porciones generosas, comida bien calientita y la atención de Doña Chela es inmejorable."
+                </p>
+<span class="block text-xs font-semibold text-agave mt-2">— Mauricio Rivera</span>
+</div>
+<div class="bg-marfil p-4 sm:p-5 rounded-lg border border-agave/5">
+<div class="flex items-center justify-between mb-2">
+<div class="flex text-ambar">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="text-[11px] text-stone-500">Cliente frecuente</span>
+</div>
+<p class="text-xs sm:text-sm text-agave/85 italic leading-relaxed">
+                  "El caldo de camarón y el pollo en crema tienen un sabor de hogar auténtico. Precio fijo de $110 muy accesible para la calidad que sirven."
+                </p>
+<span class="block text-xs font-semibold text-agave mt-2">— Carmen López V.</span>
+</div>
+<div class="bg-marfil p-4 sm:p-5 rounded-lg border border-agave/5">
+<div class="flex items-center justify-between mb-2">
+<div class="flex text-ambar">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<span class="text-[11px] text-stone-500">Cliente local</span>
+</div>
+<p class="text-xs sm:text-sm text-agave/85 italic leading-relaxed">
+                  "Comida y servicio rápido para llevar o comer ahí. Siempre salgo satisfecho."
+                </p>
+<span class="block text-xs font-semibold text-agave mt-2">— Esteban Alarcón</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. UBICACIÓN Y HORARIOS -->
+<section class="py-20 bg-[#F4EFE6] border-t border-agave/10" id="ubicacion">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<span class="text-terracota font-bold text-xs uppercase tracking-widest block mb-2">Visítanos en Alhuey</span>
+<h2 class="font-serif text-3xl sm:text-4xl text-agave font-bold">
+            Ubicación &amp; Horarios de Servicio
+          </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Información y Botones Directos -->
+<div class="lg:col-span-5 bg-white p-8 rounded-lg border border-stone-200 shadow-sm flex flex-col justify-between">
+<div class="space-y-6">
+<div>
+<h3 class="font-serif text-xl font-bold text-agave mb-2">Cocina Doña Chela</h3>
+<p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                  Te esperamos con una mesa lista y comida caliente recién salida del fogón.
+                </p>
+</div>
+<!-- Dirección -->
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-terracota text-[22px] mt-0.5">location_on</span>
+<div>
+<h4 class="font-semibold text-sm text-agave">Dirección:</h4>
+<p class="text-xs sm:text-sm text-stone-700">Niños Héroes 126, 81610 Alhuey, Sinaloa, México.</p>
+</div>
+</div>
+<!-- Horarios -->
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-terracota text-[22px] mt-0.5">schedule</span>
+<div>
+<h4 class="font-semibold text-sm text-agave">Horarios de Atención:</h4>
+<p class="text-xs sm:text-sm text-stone-700">Lunes a Sábado: <strong class="text-agave">7:00 AM – 10:00 PM</strong></p>
+<p class="text-xs sm:text-sm text-stone-500">Domingo: <span class="font-medium text-stone-600">Cerrado</span></p>
+</div>
+</div>
+<!-- Teléfono -->
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-terracota text-[22px] mt-0.5">call</span>
+<div>
+<h4 class="font-semibold text-sm text-agave">Teléfono de Pedidos:</h4>
+<p class="text-xs sm:text-sm text-stone-700 font-semibold">+52 697 107 8171</p>
+</div>
+</div>
+</div>
+<!-- Botones de Acción -->
+<div class="pt-8 flex flex-col sm:flex-row gap-3">
+
+
+</div>
+</div>
+<!-- Mapa Visual Interactivo de Alhuey -->
+<div class="lg:col-span-7 bg-stone-200 rounded-lg overflow-hidden border border-stone-300 min-h-[360px] shadow-sm relative">
+<iframe class="w-full h-full min-h-[360px] border-0" loading="lazy" src="https://maps.google.com/maps?q=Cocina+Economica+Dona+Chela+Alhuey+Sinaloa&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Ubicación de Cocina Económica Doña Chela en Alhuey">
+</iframe>
+<div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded shadow text-xs font-semibold text-agave flex items-center gap-1.5 border border-stone-200 pointer-events-none">
+<span class="w-2 h-2 rounded-full bg-terracota"></span>
+<span class="">Niños Héroes 126, Alhuey, Sin.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 9. BOTÓN FLOTANTE DE WHATSAPP -->
+<aside class="fixed bottom-6 right-6 z-50">
+
+</aside>
+<!-- 10. FOOTER COMPLETO -->
+<footer class="bg-agave text-marfil border-t border-stone-800 pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-stone-800">
+<!-- Identidad -->
+<div class="md:col-span-2 space-y-4">
+<div class="flex flex-col">
+<span class="font-serif text-2xl font-bold tracking-tight text-ambar">Doña Chela</span>
+<span class="text-[10px] uppercase tracking-widest text-marfil/60 font-semibold">Cocina Económica</span>
+</div>
+<p class="text-xs sm:text-sm text-marfil/70 max-w-sm leading-relaxed font-light">
+            Recetas caseras de sazón tradicional elaboradas a diario en Alhuey, Sinaloa. Comida corrida, antojitos y caldos calientes servidos con generosidad.
+          </p>
+</div>
+<!-- Enlaces Rápidos -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm font-semibold text-ambar uppercase tracking-wider">Navegación</h4>
+<ul class="space-y-2 text-xs text-marfil/80">
+<li class=""><a class="hover:text-amber-300 transition-colors" href="#hero">Inicio</a></li>
+<li class=""><a class="hover:text-amber-300 transition-colors" href="#especialidades">Especialidades del Día</a></li>
+<li class=""><a class="hover:text-amber-300 transition-colors" href="#precios">Lista de Precios</a></li>
+<li class=""><a class="hover:text-amber-300 transition-colors" href="#historia">Nuestra Tradición</a></li>
+<li class=""><a class="hover:text-amber-300 transition-colors" href="#ubicacion">Ubicación y Horarios</a></li>
+</ul>
+</div>
+<!-- Horarios y Contacto -->
+<div class="space-y-3">
+<h4 class="font-serif text-sm font-semibold text-ambar uppercase tracking-wider">Atención</h4>
+<p class="text-xs text-marfil/80">Lunes a Sábado<br><span class="text-marfil font-semibold">7:00 AM – 10:00 PM</span></p>
+<p class="text-xs text-marfil/80">Niños Héroes 126, Alhuey, Sinaloa</p>
+<a class="text-xs text-amber-300 hover:underline block font-semibold" href="tel:+526971078171">+52 697 107 8171</a>
+</div>
+</div>
+<!-- Barra inferior -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-marfil/60 gap-4">
+<p class="">© 2026 Cocina Económica Doña Chela. Todos los derechos reservados.</p>
+<p class="flex items-center gap-2">
+<span class="">Sazón 100% Mexicano</span>
+<span class="">•</span>
+
+</p>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+</body></html>
